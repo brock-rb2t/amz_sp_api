@@ -2,7 +2,7 @@ require 'configuration'
 
 module AmzSpApi
   class SpConfiguration < Configuration
-    attr_accessor :refresh_token, :client_id, :client_secret, :sandbox, :region,
+    attr_accessor :refresh_token, :client_id, :client_secret, :sandbox, :region, :with_scopes,
       :aws_access_key_id, :aws_secret_access_key, :credentials_provider, # either access key or credentials_provider for AWS Signer, e.g. Aws::STS::Client
       :save_access_token, :get_access_token # optional lambdas for storing and retrieving token
 
