@@ -45,7 +45,8 @@ module AmzSpApi
           grant_type: 'refresh_token',
           refresh_token: config.refresh_token,
           client_id: config.client_id,
-          client_secret: config.client_secret
+          client_secret: config.client_secret,
+          with_scopes: 'SCOPE_NOTIFICATIONS_API'
         },
         :return_type => 'Object')
 
